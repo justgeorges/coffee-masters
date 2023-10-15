@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+}
+
+header {
+  background-color: #43281c;
+  color: #f8efc0;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  height: 50px;
+}
+
+
+.logo {
+  height: inherit;
+  transform: translateY(6px);
+}
+
+
+/* main content styles */
+
+main .box {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #FCECDF;
+  box-shadow: 0 0 5px#c3c3c3;
+}
+
+.box-title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #614228;
+}
+.order-items {
+  grid-area: items;
+}
+.contact {
+  grid-area: contact;
+}
+
+.pay-button {
+  grid-area: pay-button;
+  display: flex;
+}
+
+.payment {
+  grid-area: payment;
+}
+
+.total {
+  grid-area: total;
+  padding: 50px;
+}
+
+.total-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.total-item:last-child {
+  font-weight: 700;
+}
+main {
+  padding: 30px;
+  display: grid;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template-areas:
+  "items contact"
+  "items payment"
+  "total total"
+  "pay-button pay-button";
+}
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #E4BF99;
+  padding-bottom: 15px;
+  border-width: 2px;
+  margin-bottom: 15px;
+}
+
+.order:last-child {
+  border-bottom: 0px;
+}
+
+.order h4 {
+  font-weight: 500px;
+}
+
+.item {
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.order-customize {
+  font-weight: 300;
+  list-style: none;
+  padding-left: 0px;
+  color: #B69574;
+
+}
+
+.order-customize li {
+  list-style-position: inside;
+  padding-top: 10px;
+}
+
+.label-group {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  background-color:  #FCECDF;
+  border-color:#614228;
+  border-style: solid;
+  padding: 7px;
+  border-radius: 30px;
+  padding-left: 25px;
+  flex-grow: 1;
+}
+
+.input-label {
+  background-color: #FCECDF;
+  color:#614228;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
+
+#ccv {
+  flex-grow: 0;
+  width: 90px
+}
+
+.pay-button button {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 0px;
+  background-color:#E4BF99;
+  font-size: large;
+  font-weight: 500;
+  color: #43281c;
+}
