@@ -8,22 +8,17 @@
 header {
   background-color: #43281c;
   color: #f8efc0;
-  padding-bottom: 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
-}
-
-header h1 {
   height: 50px;
+  align-items: center;
+  align-content: center;
 }
-
 
 .logo {
-  height: inherit;
-  transform: translateY(6px);
+  margin-bottom: 4px;
 }
-
-
 /* main content styles */
 
 main .box {
@@ -150,7 +145,7 @@ main {
   width: 90px
 }
 
-.pay-button button {
+.pay-button {
   flex-grow: 1;
   padding: 10px;
   border-radius: 30px;
@@ -160,4 +155,5 @@ main {
   font-size: large;
   font-weight: 500;
   color: #43281c;
+  justify-content: center;
 }

@@ -9,45 +9,51 @@
   </head>
   <body>
     <header>
-      <h1>
-        <image class="logo" src="logo.png" alt="coffee masters logo"></image
-        >Coffee Masters
-      </h1>
+      <image
+        class="logo"
+        src="logo.png"
+        alt="coffee masters logo"
+        width="40px"
+        height="40px"
+      ></image>
+      <h1>Coffee Masters</h1>
     </header>
     <main>
       <div class="order-items box">
         <h3 class="box-title">Items</h3>
-        <div class="order">
-          <h4>1x</h4>
-          <div class="item">
-            <h4>Cappucino</h4>
-            <ul class="order-customize">
-              <li>Light Foam</li>
-            </ul>
-          </div>
-          <h4>$6.00</h4>
-        </div>
-        <div class="order">
-          <h4>1x</h4>
-          <div class="item">
-            <h4>Cappucino</h4>
-            <ul class="order-customize">
-              <li>Almond Milk</li>
-              <li>Double Espresso Shot</li>
-            </ul>
-          </div>
-          <h4>$7.90</h4>
-        </div>
-        <div class="order">
-          <h4>1x</h4>
-          <div class="item">
-            <h4>Croissant</h4>
-            <ul class="order-customize">
-              <li>Butter</li>
-            </ul>
-          </div>
-          <h4>$5.37</h4>
-        </div>
+        <ul class="order-list">
+          <li class="order">
+            <h4 class="item-amount">1x</h4>
+            <div class="item">
+              <h4>Cappucino</h4>
+              <ul class="order-customize">
+                <li>Light Foam</li>
+              </ul>
+            </div>
+            <h4>$6.00</h4>
+          </li>
+          <li class="order">
+            <h4>1x</h4>
+            <div class="item">
+              <h4>Cappucino</h4>
+              <ul class="order-customize">
+                <li>Almond Milk</li>
+                <li>Double Espresso Shot</li>
+              </ul>
+            </div>
+            <h4>$7.90</h4>
+          </li>
+          <li class="order">
+            <h4>1x</h4>
+            <div class="item">
+              <h4>Croissant</h4>
+              <ul class="order-customize">
+                <li>Butter</li>
+              </ul>
+            </div>
+            <h4>$5.37</h4>
+          </li>
+        </ul>
       </div>
       <div class="contact box">
         <h3 class="box-title">Name</h3>
@@ -64,7 +70,7 @@
         </div>
         <div class="label-group">
           <label for="name" class="input-label">CCV</label>
-          <input type="text" class="input" name="name" id="ccv" />
+          <input type="text" class="input" name="name" id="ccv" maxlength="4" />
         </div>
       </div>
       <div class="total">
@@ -81,9 +87,7 @@
           <p>$20.23</p>
         </div>
       </div>
-      <div class="pay-button">
-        <button>Confirm & Pay</button>
-      </div>
+      <button class="pay-button">Confirm & Pay</button>
     </main>
   </body>
 </html>
